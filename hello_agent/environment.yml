@@ -1,0 +1,11 @@
+name: hello_agent
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - --index-url https://pypi.org/simple
+      - hello-agents==1.0.1
+      - python-dotenv>=1.2.4,<1.3
